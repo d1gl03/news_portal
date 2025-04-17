@@ -1,4 +1,5 @@
-from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
+from django.contrib.auth.decorators import login_required
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView, TemplateView
 from .models import Post
 from  datetime import  datetime
 from .filters import PostFilter
@@ -6,6 +7,7 @@ from django.urls import reverse_lazy
 from .forms import PostForm
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.views import LoginView
+from django.utils.decorators import method_decorator
 
 class PostListView(ListView):
     model = Post
@@ -48,6 +50,7 @@ class NewsCreateView(CreateView):
         post = form.save(commit=False)
         post.post_type = 'NW'
         return super().form_valid(form)
+
 
 class PostUpdateView(LoginRequiredMixin, UpdateView):
     model = Post

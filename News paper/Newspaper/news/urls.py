@@ -1,7 +1,7 @@
 from django.contrib.auth.views import LoginView
-from django.urls import path
+from django.urls import path, include
 # Импортируем созданные нами представления
-from .views import (PostListView, PostDetailView, PostDeleteView, PostUpdateView, ArticleCreateView, NewsCreateView, LoginViev)
+from .views import (PostListView, PostDetailView, PostDeleteView, PostUpdateView, ArticleCreateView, NewsCreateView)
 
 
 urlpatterns = [
@@ -12,5 +12,4 @@ urlpatterns = [
     path('article/create/', ArticleCreateView.as_view(), name='article_create'),
     path('<int:pk>/edit/', PostUpdateView.as_view(), name='post_edit'),
     path('<int:pk>/delete/', PostDeleteView.as_view(), name='post_delete'),
-    path('accounts/login/', LoginViev.as_view(), name='login'),
     ]
