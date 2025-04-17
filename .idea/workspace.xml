@@ -4,101 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06b6660b-44f7-4c8c-854f-7e206cf19105" name="Changes" comment="Работа с Vievs и фильтрами(а ещё с формами и группами)">
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_17_04_2025_18_37_[Changes]/db.sqlite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_17_04_2025_18_37_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_17_04_2025_18_37__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_17_04_2025_18_38_[Changes]/db.sqlite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_17_04_2025_18_38_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_17_04_2025_18_38__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_17_04_2025_18_40_[Changes]/db.sqlite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_17_04_2025_18_40_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_17_04_2025_18_40__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_django_projects/project2/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_django_projects/project2/project2/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_django_projects/project2/project2/project2/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_django_projects/project2/project2/simpleapp/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_django_projects/project2/project2/simpleapp/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_django_projects/project2/project2/simpleapp/templatetags/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_django_projects/simple_signup/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_django_projects/simple_signup/db.sqlite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_django_projects/simple_signup/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_django_projects/simple_signup/protect/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_django_projects/simple_signup/protect/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_django_projects/simple_signup/protect/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_django_projects/simple_signup/protect/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_django_projects/simple_signup/protect/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_django_projects/simple_signup/protect/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_django_projects/simple_signup/protect/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_django_projects/simple_signup/protect/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_django_projects/simple_signup/sign/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_django_projects/simple_signup/sign/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_django_projects/simple_signup/sign/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_django_projects/simple_signup/sign/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_django_projects/simple_signup/sign/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_django_projects/simple_signup/sign/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_django_projects/simple_signup/sign/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_django_projects/simple_signup/sign/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_django_projects/simple_signup/simple_signup/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_django_projects/simple_signup/simple_signup/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_django_projects/simple_signup/simple_signup/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_django_projects/simple_signup/simple_signup/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_django_projects/simple_signup/simple_signup/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_django_projects/simple_signup/templates/accounts/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_django_projects/simple_signup/templates/flatpages/default.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_django_projects/simple_signup/templates/main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_django_projects/simple_signup/templates/news.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_django_projects/simple_signup/templates/news_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_django_projects/simple_signup/templates/post_delete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_django_projects/simple_signup/templates/post_edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_django_projects/simple_signup/templates/protect/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_django_projects/simple_signup/templates/search.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_django_projects/simple_signup/templates/sign/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_django_projects/simple_signup/templates/sign/logout.html" afterDir="false" />
+    <list default="true" id="06b6660b-44f7-4c8c-854f-7e206cf19105" name="Changes" comment="News_project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/test_django_projects/project/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/fpages/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_django_projects/project/fpages/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_django_projects/project/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/project/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_django_projects/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/project/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_django_projects/project/project/asgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_django_projects/project/project/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_django_projects/project/project/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/project/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_django_projects/project/project/wsgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/static/assets/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/test_django_projects/project/static/assets/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/test_django_projects/project/static/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/static/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/test_django_projects/project/static/js/scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/templates/flatpages/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/test_django_projects/project/templates/flatpages/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/templates/flatpages/contact_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/test_django_projects/project/templates/flatpages/contact_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/templates/flatpages/default.html" beforeDir="false" afterPath="$PROJECT_DIR$/test_django_projects/project/templates/flatpages/default.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/project2/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/test_django_projects/project2/project2/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/project2/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_django_projects/project2/project2/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/project2/project2/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_django_projects/project/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/project2/project2/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_django_projects/project2/project2/project2/asgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/project2/project2/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_django_projects/project2/project2/project2/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/project2/project2/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_django_projects/project2/project2/project2/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/project2/project2/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_django_projects/project2/project2/project2/wsgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/project2/simpleapp/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_django_projects/project/fpages/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/project2/simpleapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_django_projects/project2/project2/simpleapp/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/project2/simpleapp/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_django_projects/project2/project2/simpleapp/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/project2/simpleapp/filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_django_projects/project2/project2/simpleapp/filters.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/project2/simpleapp/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_django_projects/project2/project2/simpleapp/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/project2/simpleapp/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_django_projects/project2/project2/simpleapp/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/project2/simpleapp/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_django_projects/project/project/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/project2/simpleapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_django_projects/project2/project2/simpleapp/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/project2/simpleapp/templatetags/custom_filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_django_projects/project2/project2/simpleapp/templatetags/custom_filters.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/project2/simpleapp/templatetags/custom_tags.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_django_projects/project2/project2/simpleapp/templatetags/custom_tags.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/project2/simpleapp/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_django_projects/project2/project2/simpleapp/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/project2/simpleapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_django_projects/project2/project2/simpleapp/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/project2/simpleapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_django_projects/project2/project2/simpleapp/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/project2/static/assets/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/test_django_projects/project2/project2/static/assets/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/project2/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/test_django_projects/project2/project2/static/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/project2/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test_django_projects/project2/project2/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/project2/static/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/test_django_projects/project2/project2/static/js/scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/project2/templates/flatpages/default.html" beforeDir="false" afterPath="$PROJECT_DIR$/test_django_projects/project2/project2/templates/flatpages/default.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/project2/templates/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/test_django_projects/project2/project2/templates/product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/project2/templates/product_delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/test_django_projects/project2/project2/templates/product_delete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/project2/templates/product_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/test_django_projects/project2/project2/templates/product_edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/project2/templates/products.html" beforeDir="false" afterPath="$PROJECT_DIR$/test_django_projects/project2/project2/templates/products.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/Newspaper/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/Newspaper/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/Newspaper/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/Newspaper/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/Newspaper/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/news/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/news/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/news/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/news/console_commands.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/news/filters.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/news/forms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/news/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/news/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/news/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/news/templatetags/censor_filter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/news/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/news/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/news/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/static/assets/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/static/css/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/static/js/scripts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/templates/flatpages/default.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/templates/news.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/templates/news_detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/templates/post_delete.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/templates/post_edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/templates/protect/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/News paper/Newspaper/templates/protect/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/templates/search.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +67,7 @@
     </excluded-from-favorite>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="news_project" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -167,7 +104,7 @@
     "Python.settings.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "news__project",
     "last_opened_file_path": "C:/Users/pen-cock/PycharmProjects/DjangoProjects/simple_signup",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -193,11 +130,11 @@
       <recent name="C:\Users\pen-cock\PycharmProjects\DjangoProjects\News paper\Newspaper" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pen-cock\PycharmProjects\DjangoProjects\test_django_projects" />
       <recent name="C:\Users\pen-cock\PycharmProjects\DjangoProjects\News paper\Newspaper\templates\registration" />
       <recent name="C:\Users\pen-cock\PycharmProjects\DjangoProjects\project2\project2\templates" />
       <recent name="C:\Users\pen-cock\PycharmProjects\DjangoProjects\project2\project2\templates\flatpages" />
       <recent name="C:\Users\pen-cock\PycharmProjects\DjangoProjects\News paper\Newspaper\templates" />
-      <recent name="C:\Users\pen-cock\PycharmProjects\DjangoProjects\News paper\Newspaper" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -342,7 +279,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744904712745</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="News_project">
+      <option name="closed" value="true" />
+      <created>1744905400146</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1744905400146</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -355,7 +300,8 @@
     <MESSAGE value="Работа с Vievs и фильтрами" />
     <MESSAGE value="Работа с Vievs и фильтрами(а ещё с формами)" />
     <MESSAGE value="Работа с Vievs и фильтрами(а ещё с формами и группами)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Работа с Vievs и фильтрами(а ещё с формами и группами)" />
+    <MESSAGE value="News_project" />
+    <option name="LAST_COMMIT_MESSAGE" value="News_project" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DjangoProjects$models.coverage" NAME="models Coverage Results" MODIFIED="1742819680496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/News paper/Newspaper/news" />

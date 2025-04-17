@@ -1,0 +1,42 @@
+{% extends 'flatpages/default.html' %}
+
+{% load censor_filter%}
+
+{% block title %}
+Новости (всего: {{ posts|length }})
+{% endblock title %}
+
+{% block content %}
+   <h1>Новости</h1>
+   <h3>Сегодня: {{ time_now|date:'d.m.Y' }}</h3>
+   <hr>
+<form action="", method="get">
+    {{  filterset.form.as_p  }}
+    <input type="submit" name="Заголовок">
+</form>
+
+   {% if posts %}
+       <table>
+           <tr>
+               <td>Заголовок</td>
+               <td>Дата публикации</td>
+               <td>Краткое содержание</td>
+               <td>Тип поста</td>
+           </tr>
+
+           {% for news in posts %}
+           <tr>
+               <td>
+                   <a href="/news/{{ news.id }}">{{ news.title|censor }}</a>
+               </td>
+               <td>{{ news.date_posted|date:'d.m.Y' }}</td>
+               <td>{{ news.content|truncatechars:36|censor }}</td>
+               <td>{{ news.post_type }}</td>
+           </tr>
+           {% endfor %}
+
+       </table>
+   {% else %}
+       <h2>Новостей нет!</h2>
+   {% endif %}
+{% endblock content %}

@@ -1,0 +1,20 @@
+{% extends 'flatpages/default.html' %}
+
+{% load censor_filter %}
+
+{% block title %}
+{{ post_item.title|censor }}
+{% endblock title %}
+
+{% block content %}
+   <h1>{{ post.title|censor }}</h1>
+   <h3>Дата публикации: {{ post.date_posted|date:'d.m.Y' }}</h3>
+   <hr>
+
+   <div>
+       {{ post.content|censor }}
+   </div>
+
+   <hr>
+   <a href="/news/">Вернуться к списку новостей</a>
+{% endblock content %}
