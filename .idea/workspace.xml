@@ -5,48 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06b6660b-44f7-4c8c-854f-7e206cf19105" name="Changes" comment="News_project">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/Newspaper/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/Newspaper/asgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/Newspaper/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/Newspaper/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/Newspaper/wsgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/manage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/news/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/news/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/news/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/news/console_commands.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/news/filters.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/news/forms.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/news/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/news/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/news/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/news/templatetags/censor_filter.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/news/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/news/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/news/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/Newspaper/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/News paper/Newspaper/Newspaper/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/News paper/Newspaper/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/news/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/News paper/Newspaper/news/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/News paper/Newspaper/protect/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/News paper/Newspaper/protect/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/News paper/Newspaper/sign/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/News paper/Newspaper/sign/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/News paper/Newspaper/sign/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/News paper/Newspaper/sign/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/News paper/Newspaper/sign/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/News paper/Newspaper/sign/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/static/assets/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/static/css/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/static/js/scripts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/templates/account/base.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/News paper/Newspaper/templates/flatpages/default.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/templates/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/templates/login.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/News paper/Newspaper/templates/news.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/News paper/Newspaper/templates/news_detail.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/News paper/Newspaper/templates/post_delete.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/News paper/Newspaper/templates/post_edit.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/templates/protect/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/News paper/Newspaper/templates/search.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/templates/sign/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/templates/sign/logout.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/templates/sign/signup.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple_signup/templates/protect/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/simple_signup/templates/protect/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,39 +80,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.manage.executor&quot;: &quot;Run&quot;,
-    &quot;Python.models.executor&quot;: &quot;Run&quot;,
-    &quot;Python.settings.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;news__project&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/pen-cock/PycharmProjects/DjangoProjects/simple_signup&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.VCS&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Python.main.executor": "Run",
+    "Python.manage.executor": "Run",
+    "Python.models.executor": "Run",
+    "Python.settings.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "news__project",
+    "last_opened_file_path": "C:/Users/pen-cock/PycharmProjects/DjangoProjects/News paper/Newspaper",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.VCS",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;,
-      &quot;sqlite&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql",
+      "sqlite"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\pen-cock\PycharmProjects\DjangoProjects\News paper\Newspaper" />
       <recent name="C:\Users\pen-cock\PycharmProjects\DjangoProjects\simple_signup" />
       <recent name="C:\Users\pen-cock\PycharmProjects\DjangoProjects\simple_signup\protect" />
       <recent name="C:\Users\pen-cock\PycharmProjects\DjangoProjects\project2\project2\static" />
       <recent name="C:\Users\pen-cock\PycharmProjects\DjangoProjects\News paper\Newspaper\news" />
-      <recent name="C:\Users\pen-cock\PycharmProjects\DjangoProjects\News paper\Newspaper" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\pen-cock\PycharmProjects\DjangoProjects\News paper\Newspaper" />
@@ -219,7 +193,7 @@
       <workItem from="1744885138588" duration="5800000" />
       <workItem from="1744910454377" duration="41000" />
       <workItem from="1744918900336" duration="68000" />
-      <workItem from="1744974768224" duration="3219000" />
+      <workItem from="1744974768224" duration="6291000" />
     </task>
     <task id="LOCAL-00001" summary="а">
       <option name="closed" value="true" />
@@ -301,7 +275,23 @@
       <option name="project" value="LOCAL" />
       <updated>1744905400146</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="News_project">
+      <option name="closed" value="true" />
+      <created>1744978487309</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1744978487309</updated>
+    </task>
+    <task id="LOCAL-00012" summary="News_project">
+      <option name="closed" value="true" />
+      <created>1744978493111</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1744978493111</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
