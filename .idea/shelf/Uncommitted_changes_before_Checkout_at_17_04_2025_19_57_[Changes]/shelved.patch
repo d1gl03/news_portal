@@ -1,0 +1,136 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"06b6660b-44f7-4c8c-854f-7e206cf19105\" name=\"Changes\" comment=\"News_project\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/News paper/Newspaper/db.sqlite3\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/News paper/Newspaper/db.sqlite3\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"SQL File\" />\r\n        <option value=\"HTML File\" />\r\n        <option value=\"Python Script\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <excluded-from-favorite>\r\n      <branch-storage>\r\n        <map>\r\n          <entry type=\"LOCAL\">\r\n            <value>\r\n              <list>\r\n                <branch-info repo=\"$PROJECT_DIR$\" source=\"master\" />\r\n              </list>\r\n            </value>\r\n          </entry>\r\n        </map>\r\n      </branch-storage>\r\n    </excluded-from-favorite>\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"news_project\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;d1gl03&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/d1gl03/hello&quot;,\r\n    &quot;accountId&quot;: &quot;c222688a-eae3-4dcd-a3d5-e9ce4d05d755&quot;\r\n  }\r\n}</component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 1\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2uDFjY8KBbTRNLcFTZQsGBi4INV\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"1\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,\r\n    &quot;Python.main.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.manage.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.models.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.settings.executor&quot;: &quot;Run&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;master&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/Users/pen-cock/PycharmProjects/DjangoProjects/simple_signup&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.VCS&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  },\r\n  &quot;keyToStringList&quot;: {\r\n    &quot;DatabaseDriversLRU&quot;: [\r\n      &quot;postgresql&quot;,\r\n      &quot;sqlite&quot;\r\n    ]\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\pen-cock\\PycharmProjects\\DjangoProjects\\simple_signup\" />\r\n      <recent name=\"C:\\Users\\pen-cock\\PycharmProjects\\DjangoProjects\\simple_signup\\protect\" />\r\n      <recent name=\"C:\\Users\\pen-cock\\PycharmProjects\\DjangoProjects\\project2\\project2\\static\" />\r\n      <recent name=\"C:\\Users\\pen-cock\\PycharmProjects\\DjangoProjects\\News paper\\Newspaper\\news\" />\r\n      <recent name=\"C:\\Users\\pen-cock\\PycharmProjects\\DjangoProjects\\News paper\\Newspaper\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\pen-cock\\PycharmProjects\\DjangoProjects\\News paper\\Newspaper\\templates\\registration\" />\r\n      <recent name=\"C:\\Users\\pen-cock\\PycharmProjects\\DjangoProjects\\project2\\project2\\templates\" />\r\n      <recent name=\"C:\\Users\\pen-cock\\PycharmProjects\\DjangoProjects\\project2\\project2\\templates\\flatpages\" />\r\n      <recent name=\"C:\\Users\\pen-cock\\PycharmProjects\\DjangoProjects\\News paper\\Newspaper\\templates\" />\r\n      <recent name=\"C:\\Users\\pen-cock\\PycharmProjects\\DjangoProjects\\News paper\\Newspaper\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-PY-243.22562.180\" />\r\n        <option value=\"bundled-python-sdk-85c76a3b01b3-9a18a617cbe4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.22562.180\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"06b6660b-44f7-4c8c-854f-7e206cf19105\" name=\"Changes\" comment=\"\" />\r\n      <created>1741775373883</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1741775373883</updated>\r\n      <workItem from=\"1741775374914\" duration=\"1283000\" />\r\n      <workItem from=\"1741866236881\" duration=\"1798000\" />\r\n      <workItem from=\"1741868060316\" duration=\"2779000\" />\r\n      <workItem from=\"1741881311636\" duration=\"956000\" />\r\n      <workItem from=\"1741882544304\" duration=\"280000\" />\r\n      <workItem from=\"1741883603837\" duration=\"2022000\" />\r\n      <workItem from=\"1741890454905\" duration=\"1244000\" />\r\n      <workItem from=\"1741951662517\" duration=\"4938000\" />\r\n      <workItem from=\"1742205533872\" duration=\"2505000\" />\r\n      <workItem from=\"1742218842985\" duration=\"156000\" />\r\n      <workItem from=\"1742299275899\" duration=\"2024000\" />\r\n      <workItem from=\"1742304241956\" duration=\"2601000\" />\r\n      <workItem from=\"1742314549802\" duration=\"2004000\" />\r\n      <workItem from=\"1742403348872\" duration=\"268000\" />\r\n      <workItem from=\"1742447387170\" duration=\"1464000\" />\r\n      <workItem from=\"1742738298011\" duration=\"706000\" />\r\n      <workItem from=\"1742812943034\" duration=\"560000\" />\r\n      <workItem from=\"1742813516944\" duration=\"6957000\" />\r\n      <workItem from=\"1742896869363\" duration=\"2620000\" />\r\n      <workItem from=\"1742985525835\" duration=\"408000\" />\r\n      <workItem from=\"1742987039949\" duration=\"517000\" />\r\n      <workItem from=\"1742988182168\" duration=\"100000\" />\r\n      <workItem from=\"1742988295507\" duration=\"2745000\" />\r\n      <workItem from=\"1742994338667\" duration=\"2494000\" />\r\n      <workItem from=\"1743012619426\" duration=\"1607000\" />\r\n      <workItem from=\"1743072832700\" duration=\"11141000\" />\r\n      <workItem from=\"1743100273335\" duration=\"58000\" />\r\n      <workItem from=\"1743145075408\" duration=\"133000\" />\r\n      <workItem from=\"1743315674437\" duration=\"1182000\" />\r\n      <workItem from=\"1743363127026\" duration=\"2155000\" />\r\n      <workItem from=\"1743406568410\" duration=\"3473000\" />\r\n      <workItem from=\"1743449670979\" duration=\"3031000\" />\r\n      <workItem from=\"1743494350047\" duration=\"2951000\" />\r\n      <workItem from=\"1743539996219\" duration=\"1939000\" />\r\n      <workItem from=\"1743578693349\" duration=\"11325000\" />\r\n      <workItem from=\"1743690531578\" duration=\"566000\" />\r\n      <workItem from=\"1743691213420\" duration=\"3259000\" />\r\n      <workItem from=\"1744021333298\" duration=\"4477000\" />\r\n      <workItem from=\"1744051435293\" duration=\"3000\" />\r\n      <workItem from=\"1744108211307\" duration=\"753000\" />\r\n      <workItem from=\"1744195293986\" duration=\"8577000\" />\r\n      <workItem from=\"1744208716925\" duration=\"3105000\" />\r\n      <workItem from=\"1744280059144\" duration=\"4748000\" />\r\n      <workItem from=\"1744294725482\" duration=\"5551000\" />\r\n      <workItem from=\"1744303482380\" duration=\"1036000\" />\r\n      <workItem from=\"1744308065944\" duration=\"304000\" />\r\n      <workItem from=\"1744459342695\" duration=\"5294000\" />\r\n      <workItem from=\"1744652698342\" duration=\"1768000\" />\r\n      <workItem from=\"1744711350652\" duration=\"4757000\" />\r\n      <workItem from=\"1744719657985\" duration=\"4999000\" />\r\n      <workItem from=\"1744736369065\" duration=\"3353000\" />\r\n      <workItem from=\"1744802433380\" duration=\"4214000\" />\r\n      <workItem from=\"1744885138588\" duration=\"5800000\" />\r\n      <workItem from=\"1744906544458\" duration=\"125000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"а\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1741882616444</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1741882616444</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"My first django &quot;app&quot;\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1742307108932</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1742307108932</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"My first django &quot;app&quot;\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1742316118901</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1742316118901</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Работа над моделями\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1743087365591</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1743087365591</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Работа с Vievs и фильтрами\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1743693833029</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1743693833029</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"Работа с Vievs и фильтрами\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1743693923404</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1743693923404</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"Работа с Vievs и фильтрами(а ещё с формами)\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744303934752</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744303934752</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"Работа с Vievs и фильтрами(а ещё с формами)\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744712974498</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744712974498</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"Работа с Vievs и фильтрами(а ещё с формами и группами)\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744904712745</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744904712745</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"10\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"а\" />\r\n    <MESSAGE value=\"My first django &quot;app&quot;\" />\r\n    <MESSAGE value=\"Работа над моделями\" />\r\n    <MESSAGE value=\"Работа с Vievs и фильтрами\" />\r\n    <MESSAGE value=\"Работа с Vievs и фильтрами(а ещё с формами)\" />\r\n    <MESSAGE value=\"Работа с Vievs и фильтрами(а ещё с формами и группами)\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Работа с Vievs и фильтрами(а ещё с формами и группами)\" />\r\n  </component>\r\n  <component name=\"com.intellij.coverage.CoverageDataManagerImpl\">\r\n    <SUITE FILE_PATH=\"coverage/DjangoProjects$models.coverage\" NAME=\"models Coverage Results\" MODIFIED=\"1742819680496\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/News paper/Newspaper/news\" />\r\n    <SUITE FILE_PATH=\"coverage/DjangoProjects$manage.coverage\" NAME=\"manage Coverage Results\" MODIFIED=\"1741775956285\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/project\" />\r\n    <SUITE FILE_PATH=\"coverage/DjangoProjects$settings.coverage\" NAME=\"settings Coverage Results\" MODIFIED=\"1744201365544\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/project2/project2/project2\" />\r\n    <SUITE FILE_PATH=\"coverage/DjangoProjects$main.coverage\" NAME=\"main Coverage Results\" MODIFIED=\"1742448255285\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision b2df6a402443cb82228e098fabaeada2d5aa2284)
++++ b/.idea/workspace.xml	(date 1744908906745)
+@@ -5,8 +5,46 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="06b6660b-44f7-4c8c-854f-7e206cf19105" name="Changes" comment="News_project">
++      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/News paper/Newspaper/db.sqlite3" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/Newspaper/__init__.py" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/Newspaper/asgi.py" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/Newspaper/settings.py" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/Newspaper/urls.py" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/Newspaper/wsgi.py" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/accounts/__init__.py" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/accounts/admin.py" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/accounts/apps.py" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/accounts/migrations/__init__.py" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/accounts/models.py" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/accounts/tests.py" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/accounts/views.py" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/db.sqlite3" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/manage.py" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/news/__init__.py" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/news/admin.py" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/news/apps.py" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/news/console_commands.txt" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/news/filters.py" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/news/forms.py" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/news/migrations/0001_initial.py" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/news/migrations/__init__.py" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/news/models.py" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/news/templatetags/censor_filter.py" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/news/tests.py" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/news/urls.py" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/news/views.py" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/static/assets/favicon.ico" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/static/css/styles.css" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/static/js/scripts.js" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/templates/flatpages/default.html" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/templates/login.html" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/templates/news.html" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/templates/news_detail.html" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/templates/post_delete.html" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/templates/post_edit.html" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/templates/search.html" beforeDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -66,39 +104,39 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent">{
+-  &quot;keyToString&quot;: {
+-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+-    &quot;Python.manage.executor&quot;: &quot;Run&quot;,
+-    &quot;Python.models.executor&quot;: &quot;Run&quot;,
+-    &quot;Python.settings.executor&quot;: &quot;Run&quot;,
+-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+-    &quot;last_opened_file_path&quot;: &quot;C:/Users/pen-cock/PycharmProjects/DjangoProjects/simple_signup&quot;,
+-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.VCS&quot;,
+-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "DefaultHtmlFileTemplate": "HTML File",
++    "Python.main.executor": "Run",
++    "Python.manage.executor": "Run",
++    "Python.models.executor": "Run",
++    "Python.settings.executor": "Run",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "RunOnceActivity.git.unshallow": "true",
++    "git-widget-placeholder": "master",
++    "last_opened_file_path": "C:/Users/pen-cock/PycharmProjects/DjangoProjects/n",
++    "node.js.detected.package.eslint": "true",
++    "node.js.detected.package.tslint": "true",
++    "node.js.selected.package.eslint": "(autodetect)",
++    "node.js.selected.package.tslint": "(autodetect)",
++    "nodejs_package_manager_path": "npm",
++    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.VCS",
++    "vue.rearranger.settings.migration": "true"
+   },
+-  &quot;keyToStringList&quot;: {
+-    &quot;DatabaseDriversLRU&quot;: [
+-      &quot;postgresql&quot;,
+-      &quot;sqlite&quot;
++  "keyToStringList": {
++    "DatabaseDriversLRU": [
++      "postgresql",
++      "sqlite"
+     ]
+   }
+-}</component>
++}]]></component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
++      <recent name="C:\Users\pen-cock\PycharmProjects\DjangoProjects\n" />
+       <recent name="C:\Users\pen-cock\PycharmProjects\DjangoProjects\simple_signup" />
+       <recent name="C:\Users\pen-cock\PycharmProjects\DjangoProjects\simple_signup\protect" />
+       <recent name="C:\Users\pen-cock\PycharmProjects\DjangoProjects\project2\project2\static" />
+       <recent name="C:\Users\pen-cock\PycharmProjects\DjangoProjects\News paper\Newspaper\news" />
+-      <recent name="C:\Users\pen-cock\PycharmProjects\DjangoProjects\News paper\Newspaper" />
+     </key>
+     <key name="MoveFile.RECENT_KEYS">
+       <recent name="C:\Users\pen-cock\PycharmProjects\DjangoProjects\News paper\Newspaper\templates\registration" />
+@@ -178,6 +216,7 @@
+       <workItem from="1744802433380" duration="4214000" />
+       <workItem from="1744885138588" duration="5800000" />
+       <workItem from="1744906544458" duration="125000" />
++      <workItem from="1744908353621" duration="549000" />
+     </task>
+     <task id="LOCAL-00001" summary="а">
+       <option name="closed" value="true" />
+diff --git a/News paper/Newspaper/Newspaper/__init__.py b/News paper/Newspaper/Newspaper/__init__.py
+deleted file mode 100644
+diff --git a/News paper/Newspaper/news/migrations/__init__.py b/News paper/Newspaper/news/migrations/__init__.py
+deleted file mode 100644
+diff --git a/News paper/Newspaper/news/__init__.py b/News paper/Newspaper/news/__init__.py
+deleted file mode 100644

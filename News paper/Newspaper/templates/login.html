@@ -1,0 +1,6 @@
+{% extends 'flatpages/default.html' %}
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Войти</button>
+</form>
