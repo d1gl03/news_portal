@@ -27,7 +27,7 @@ class PostListView(ListView):
         # Добавляем количество всех новостей
         context['news_count'] = self.get_queryset().count()
         context['filterset'] = self.filterset
-        context['category'] = self.category
+        context['categories'] = self.category
         return context
 
     def get_queryset(self):

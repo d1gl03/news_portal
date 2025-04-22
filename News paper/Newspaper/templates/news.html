@@ -11,6 +11,15 @@
    <h3>Сегодня: {{ time_now|date:'d.m.Y' }}</h3>
    <hr>
 
+    <h2>Категории</h2>
+   <ul>
+       {% for category in categories %}
+           <li>{{ category.category_name }}</li>
+       {% empty %}
+           <li>Категорий нет.</li>
+       {% endfor %}
+   </ul>
+
    {% if posts %}
        <table>
            <tr>
@@ -29,7 +38,7 @@
                <td>{{ news.date_posted|date:'d.m.Y' }}</td>
                <td>{{ news.content|truncatechars:36|censor }}</td>
                <td>{{ news.post_type }}</td>
-               <td>{{ news.category }}</td>
+               <td>{{ news.get_category_list|join:", " }}</td>
            </tr>
            {% endfor %}
 
