@@ -8,6 +8,11 @@ class PostFilter(FilterSet):
         lookup_expr='icontains'
     )
 
+    category = CharFilter(
+        label='Категория',
+        lookup_expr='icontains'
+    )
+
     author   = CharFilter(
         lookup_expr='icontains',
         label='Автор'
@@ -18,6 +23,8 @@ class PostFilter(FilterSet):
         label='Позже указанной даты',
         widget=forms.DateInput(attrs={'type': 'date'})
     )
+
+
 
     class Meta:
         model = Post

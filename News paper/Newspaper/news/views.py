@@ -1,5 +1,5 @@
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
-from .models import Post
+from .models import Post, Category
 from  datetime import  datetime
 from .filters import PostFilter
 from django.urls import reverse_lazy
@@ -17,6 +17,7 @@ class PostListView(ListView):
     def __init__(self):
         super().__init__()
         self.filterset = None
+        self.category = Category.objects.all()
 
     def get_context_data(self, **kwargs):
         # Получаем базовый контекст
@@ -26,6 +27,7 @@ class PostListView(ListView):
         # Добавляем количество всех новостей
         context['news_count'] = self.get_queryset().count()
         context['filterset'] = self.filterset
+        context['category'] = self.category
         return context
 
     def get_queryset(self):
