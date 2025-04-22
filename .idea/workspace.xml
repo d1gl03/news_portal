@@ -5,19 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06b6660b-44f7-4c8c-854f-7e206cf19105" name="Changes" comment="News_project">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/275b86ea-48ee-475b-94d2-3bf3c1c1aed2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/275b86ea-48ee-475b-94d2-3bf3c1c1aed2/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/512851c8-cd26-4927-a96c-05cbd0569a21.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/512851c8-cd26-4927-a96c-05cbd0569a21/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cfb6c10f-7fc6-4531-9ac0-2859105c64e1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cfb6c10f-7fc6-4531-9ac0-2859105c64e1/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/Newspaper/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/News paper/Newspaper/Newspaper/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/News paper/Newspaper/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/news/filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/News paper/Newspaper/news/filters.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/news/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/News paper/Newspaper/news/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/news/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/News paper/Newspaper/news/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/News paper/Newspaper/templates/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/News paper/Newspaper/templates/news.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/News paper/Newspaper/templates/search.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +182,7 @@
       <workItem from="1744918900336" duration="68000" />
       <workItem from="1744974768224" duration="6598000" />
       <workItem from="1745239898731" duration="3061000" />
-      <workItem from="1745307367288" duration="1611000" />
+      <workItem from="1745307367288" duration="2552000" />
     </task>
     <task id="LOCAL-00001" summary="а">
       <option name="closed" value="true" />
@@ -298,7 +288,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744984947783</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="News_project">
+      <option name="closed" value="true" />
+      <created>1745309377788</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1745309377788</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
