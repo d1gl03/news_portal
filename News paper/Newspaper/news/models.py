@@ -31,7 +31,7 @@ class Author(models.Model):
 
 class Category(models.Model):
     category_name = models.CharField(max_length=100, unique=True)
-    subscribers = models.ManyToManyField(User, related_name='subscribers')
+    subscribers = models.ManyToManyField(User, related_name='subscribers', blank=True)
 
 
     def __str__(self):

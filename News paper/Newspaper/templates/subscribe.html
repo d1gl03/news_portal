@@ -1,0 +1,12 @@
+{% block content %}
+   <h1>Подписка на категорию</h1>
+   <h3>{{ category.category_name }}</h3>
+   {% if request.user in category.subscribers.all %}
+       <p>Вы уже подписаны на эту категорию.</p>
+   {% else %}
+       <form method="post">
+           {% csrf_token %}
+           <button type="submit">Подписаться</button>
+       </form>
+   {% endif %}
+{% endblock content %}
