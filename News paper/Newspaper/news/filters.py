@@ -10,7 +10,7 @@ class PostFilter(FilterSet):
 
     category = CharFilter(
         label='Категория',
-        lookup_expr='icontains'
+        lookup_expr='exact'
     )
 
     author   = CharFilter(
