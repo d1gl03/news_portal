@@ -1,7 +1,9 @@
 from django.contrib.auth.decorators import login_required
+from django.core.mail import EmailMultiAlternatives
 from django.db.models.signals import post_save, m2m_changed
 from django.dispatch import receiver
 from django.shortcuts import render, redirect
+from django.template.loader import render_to_string
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from .models import Post, Category, PostCategory
 from  datetime import  datetime
@@ -98,16 +100,28 @@ class ArticleCreateView(PermissionRequiredMixin, CreateView):
 class LoginViev(LoginView):
     template_name = 'login.html'
 
-@receiver(m2m_changed, sender=PostCategory)
-def send_notification(sender, instance, **kwargs):
-    """
-    Отправляет уведомление на электронную почту подписчиков категории при создании или обновлении публикации.
-    """
-    if kwargs["action"] == "post_add":
+
+@receiver(m2m_changed, sender=Post.category.through)
+def send_notifications(sender, instance, action, **kwargs):
+    if action == "post_add":
         categories = instance.category.all()
-        subject = f'Новое публикация'
-        message = f'Добрый день,\n\nесть новая публикация:\n\n{instance.title}\n{instance.content[:500]}...'
-        recipient_list = []
         for category in categories:
-            recipient_list.extend([subscriber.email for subscriber in category.subscribers.all()])
-        send_notification_email(subject, message, recipient_list)
+            subscribers = category.subscribers.all()
+            for subscriber in subscribers:
+                # Формируем HTML-письмо
+                html_content = render_to_string(
+                    'post_notification.html',
+                    {
+                        'post': instance,
+                        'username': subscriber.username,
+                    }
+                )
+
+                msg = EmailMultiAlternatives(
+                    subject=instance.title,  # Заголовок статьи как тема письма
+                    body='',  # Текстовое содержимое пустое, т.к. используем HTML
+                    from_email='newsportal121@yandex.ru',
+                    to=[subscriber.email],
+                )
+                msg.attach_alternative(html_content, "text/html")
+                msg.send()
