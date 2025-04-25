@@ -12,9 +12,21 @@
    <hr>
 <form action="", method="get">
     {{  filterset.form.as_p  }}
+
     <input type="submit" name="Заголовок">
 </form>
-
+<form method="get">
+       <label for="category">Выберите категорию:</label>
+       <select name="category" id="category">
+           <option value="">Все категории</option>
+           {% for category in categories %}
+               <option value="{{ category.id }}" {% if request.GET.category == category.id|stringformat:"s" %}selected{% endif %}>{{ category.category_name }}</option>
+           {% empty %}
+               <option>Категорий нет</option>
+           {% endfor %}
+       </select>
+       <button type="submit">Выбрать</button>
+   </form>
 <ul>
        {% for category in categories %}
            <li>

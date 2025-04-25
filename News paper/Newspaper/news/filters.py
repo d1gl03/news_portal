@@ -1,5 +1,5 @@
-from django_filters import FilterSet, CharFilter, DateFilter
-from .models import Post
+from django_filters import FilterSet, CharFilter, DateFilter, ModelChoiceFilter
+from .models import Post, Category
 from django import forms
 
 class PostFilter(FilterSet):
@@ -8,10 +8,6 @@ class PostFilter(FilterSet):
         lookup_expr='icontains'
     )
 
-    category = CharFilter(
-        label='Категория',
-        lookup_expr='exact'
-    )
 
     author   = CharFilter(
         lookup_expr='icontains',
@@ -28,4 +24,16 @@ class PostFilter(FilterSet):
 
     class Meta:
         model = Post
+        fields = []
+
+class CategoryFilter(FilterSet):
+    category = ModelChoiceFilter(
+        empty_label="Все категории",
+        field_name='category',
+        label="Выбор категории",
+        queryset=Category.objects.all()
+    )
+
+    class Meta:
+        model = Post  # Замените на вашу модель публикаций, если она иначе называется
         fields = []

@@ -1,11 +1,11 @@
 from django.contrib.auth.decorators import login_required
-from django.db.models.signals import post_save
+from django.db.models.signals import post_save, m2m_changed
 from django.dispatch import receiver
 from django.shortcuts import render, redirect
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
-from .models import Post, Category
+from .models import Post, Category, PostCategory
 from  datetime import  datetime
-from .filters import PostFilter
+from .filters import PostFilter, CategoryFilter
 from django.urls import reverse_lazy
 from .forms import PostForm
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
@@ -18,7 +18,7 @@ def subscribe(request, category_id):
     if request.method == 'POST':
         if request.user not in category.subscribers.all():
             category.subscribers.add(request.user)
-            return redirect('posts_list')  # перенаправление на главную страницу после подписки
+            return redirect('posts_list')
     return render(request, 'subscribe.html', {'category': category})
 
 class PostListView(ListView):
@@ -32,6 +32,7 @@ class PostListView(ListView):
         super().__init__()
         self.filterset = None
         self.category = Category.objects.all()
+        self.filterset_category = CategoryFilter(self.category)
 
     def get_context_data(self, **kwargs):
         # Получаем базовый контекст
@@ -42,6 +43,7 @@ class PostListView(ListView):
         context['news_count'] = self.get_queryset().count()
         context['filterset'] = self.filterset
         context['categories'] = self.category
+        context['filterset_category'] = self.filterset_category
         return context
 
     def get_queryset(self):
@@ -96,15 +98,15 @@ class ArticleCreateView(PermissionRequiredMixin, CreateView):
 class LoginViev(LoginView):
     template_name = 'login.html'
 
-@receiver(post_save, sender=Post)
-def send_notification(sender, instance, created, **kwargs):
+@receiver(m2m_changed, sender=PostCategory)
+def send_notification(sender, instance, **kwargs):
     """
     Отправляет уведомление на электронную почту подписчиков категории при создании или обновлении публикации.
     """
-    if created:
+    if kwargs["action"] == "post_add":
         categories = instance.category.all()
         subject = f'Новое публикация'
-        message = f'Добрый день,\n\nесть новая публикация:\n\n{instance.title}\n{instance.content[:500]}...'  # Обрезаем содержание для уведомления
+        message = f'Добрый день,\n\nесть новая публикация:\n\n{instance.title}\n{instance.content[:500]}...'
         recipient_list = []
         for category in categories:
             recipient_list.extend([subscriber.email for subscriber in category.subscribers.all()])
