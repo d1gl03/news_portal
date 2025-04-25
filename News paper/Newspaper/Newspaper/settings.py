@@ -164,5 +164,5 @@ ACCOUNT_FORMS = {'signup': 'sign.models.BasicSignupForm'}
 EMAIL_HOST = 'smtp.yandex.ru'
 EMAIL_PORT = 465
 EMAIL_HOST_USER = 'newsportal121'
-EMAIL_HOST_PASSWORD = '132465Ars@'
+EMAIL_HOST_PASSWORD = 'vwuudoafyzjhkmbc'
 EMAIL_USE_SSL = True
