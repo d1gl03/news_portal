@@ -7,6 +7,7 @@
     <list default="true" id="06b6660b-44f7-4c8c-854f-7e206cf19105" name="Changes" comment="News_project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/News paper/Newspaper/Newspaper/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/News paper/Newspaper/Newspaper/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/Newspaper/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/News paper/Newspaper/Newspaper/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/News paper/Newspaper/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/News paper/Newspaper/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -187,6 +188,7 @@
       <workItem from="1745435739323" duration="4063000" />
       <workItem from="1745497539202" duration="4503000" />
       <workItem from="1745584445908" duration="3307000" />
+      <workItem from="1745664067175" duration="875000" />
     </task>
     <task id="LOCAL-00001" summary="а">
       <option name="closed" value="true" />
@@ -348,7 +350,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745594643812</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="News_project">
+      <option name="closed" value="true" />
+      <created>1745595514926</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1745595514926</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
