@@ -154,16 +154,16 @@ STATICFILES_DIRS = [BASE_DIR / 'static']
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
 
-ACCOUNT_EMAIL_REQUIRED = True
-ACCOUNT_UNIQUE_EMAIL = True
-ACCOUNT_USERNAME_REQUIRED = False
-ACCOUNT_AUTHENTICATION_METHOD = 'email'
-ACCOUNT_EMAIL_VERIFICATION = 'none'
-ACCOUNT_FORMS = {'signup': 'sign.models.BasicSignupForm'}
+ACCOUNT_EMAIL_VERIFICATION = 'mandatory'  # Обязательная верификация
+ACCOUNT_AUTHENTICATION_METHOD = 'email'   # Аутентификация по email
+ACCOUNT_EMAIL_REQUIRED = True             # Email обязателен
+ACCOUNT_USERNAME_REQUIRED = False         # Имя пользователя не обязательно
+ACCOUNT_CONFIRM_EMAIL_ON_GET = True
+#ACCOUNT_FORMS = {'signup': 'sign.models.BasicSignupForm'}
 
 EMAIL_HOST = 'smtp.yandex.ru'
 EMAIL_PORT = 465
 EMAIL_HOST_USER = 'newsportal121'
 EMAIL_HOST_PASSWORD = 'vwuudoafyzjhkmbc'
 EMAIL_USE_SSL = True
-DEFAULT_FROM_EMAIL = ''
+DEFAULT_FROM_EMAIL = 'newsportal121@yandex.ru'
