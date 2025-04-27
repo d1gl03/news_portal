@@ -24,4 +24,5 @@ urlpatterns = [
     path('thragg/', include('django.contrib.flatpages.urls')),
     path('', include('protect.urls')),
     path('accounts/', include('allauth.urls')),
+    path('sign/', include('sign.urls')),
 ]

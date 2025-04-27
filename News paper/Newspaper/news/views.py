@@ -13,7 +13,7 @@ from .forms import PostForm
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 from django.contrib.auth.views import LoginView
 from .utils import send_notification_email
-
+from .mixins import DailyPostLimitMixin
 @login_required
 def subscribe(request, category_id):
     category = Category.objects.get(id=category_id)
@@ -59,12 +59,13 @@ class PostDetailView(DetailView):
     template_name = 'news_detail.html'
     success_url = reverse_lazy('posts_list')
 
-class NewsCreateView(PermissionRequiredMixin, CreateView):
+class NewsCreateView(DailyPostLimitMixin, CreateView):
     permission_required = ('news.add.Post')
     model = Post
     form_class = PostForm
     template_name = 'post_edit.html'
     success_url = reverse_lazy('posts_list')
+    post_type = "NW"
     def form_valid(self, form):
         post = form.save(commit=False)
         post.post_type = 'NW'
@@ -90,7 +91,7 @@ class ArticleCreateView(PermissionRequiredMixin, CreateView):
     form_class = PostForm
     template_name = 'post_edit.html'
     success_url = reverse_lazy('posts_list')
-
+    post_type = "AR"
     def form_valid(self, form):
         post = form.save(commit=False)
         post.post_type = 'AR'
