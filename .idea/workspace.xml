@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="06b6660b-44f7-4c8c-854f-7e206cf19105" name="Changes" comment="News_project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/News paper/Newspaper/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +17,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="SQL File" />
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -74,8 +75,8 @@
     &quot;Python.settings.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;news__project&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/pen-cock/PycharmProjects/DjangoProjects/News paper/Newspaper&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/pen-cock/PycharmProjects/DjangoProjects/simple_signup&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -93,18 +94,18 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\pen-cock\PycharmProjects\DjangoProjects\News paper\Newspaper" />
       <recent name="C:\Users\pen-cock\PycharmProjects\DjangoProjects\simple_signup" />
       <recent name="C:\Users\pen-cock\PycharmProjects\DjangoProjects\simple_signup\protect" />
       <recent name="C:\Users\pen-cock\PycharmProjects\DjangoProjects\project2\project2\static" />
       <recent name="C:\Users\pen-cock\PycharmProjects\DjangoProjects\News paper\Newspaper\news" />
+      <recent name="C:\Users\pen-cock\PycharmProjects\DjangoProjects\News paper\Newspaper" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\pen-cock\PycharmProjects\DjangoProjects\News paper\Newspaper\templates\account\email" />
-      <recent name="C:\Users\pen-cock\PycharmProjects\DjangoProjects\News paper\Newspaper" />
-      <recent name="C:\Users\pen-cock\PycharmProjects\DjangoProjects\test_django_projects" />
       <recent name="C:\Users\pen-cock\PycharmProjects\DjangoProjects\News paper\Newspaper\templates\registration" />
       <recent name="C:\Users\pen-cock\PycharmProjects\DjangoProjects\project2\project2\templates" />
+      <recent name="C:\Users\pen-cock\PycharmProjects\DjangoProjects\project2\project2\templates\flatpages" />
+      <recent name="C:\Users\pen-cock\PycharmProjects\DjangoProjects\News paper\Newspaper\templates" />
+      <recent name="C:\Users\pen-cock\PycharmProjects\DjangoProjects\News paper\Newspaper" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -176,19 +177,7 @@
       <workItem from="1744736369065" duration="3353000" />
       <workItem from="1744802433380" duration="4214000" />
       <workItem from="1744885138588" duration="5800000" />
-      <workItem from="1744910454377" duration="41000" />
-      <workItem from="1744918900336" duration="68000" />
-      <workItem from="1744974768224" duration="6598000" />
-      <workItem from="1745239898731" duration="3061000" />
-      <workItem from="1745307367288" duration="13875000" />
-      <workItem from="1745408905567" duration="8337000" />
-      <workItem from="1745435739323" duration="4063000" />
-      <workItem from="1745497539202" duration="4503000" />
-      <workItem from="1745584445908" duration="3307000" />
-      <workItem from="1745664067175" duration="875000" />
-      <workItem from="1745744421136" duration="1351000" />
-      <workItem from="1745754264573" duration="1981000" />
-      <workItem from="1745756832922" duration="1378000" />
+      <workItem from="1744906544458" duration="125000" />
     </task>
     <task id="LOCAL-00001" summary="а">
       <option name="closed" value="true" />
@@ -262,119 +251,7 @@
       <option name="project" value="LOCAL" />
       <updated>1744904712745</updated>
     </task>
-    <task id="LOCAL-00010" summary="News_project">
-      <option name="closed" value="true" />
-      <created>1744905400146</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1744905400146</updated>
-    </task>
-    <task id="LOCAL-00011" summary="News_project">
-      <option name="closed" value="true" />
-      <created>1744978487309</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1744978487309</updated>
-    </task>
-    <task id="LOCAL-00012" summary="News_project">
-      <option name="closed" value="true" />
-      <created>1744978493111</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1744978493111</updated>
-    </task>
-    <task id="LOCAL-00013" summary="News_project">
-      <option name="closed" value="true" />
-      <created>1744984947783</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1744984947783</updated>
-    </task>
-    <task id="LOCAL-00014" summary="News_project">
-      <option name="closed" value="true" />
-      <created>1745309377788</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1745309377788</updated>
-    </task>
-    <task id="LOCAL-00015" summary="News_project">
-      <option name="closed" value="true" />
-      <created>1745310268013</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1745310268013</updated>
-    </task>
-    <task id="LOCAL-00016" summary="News_project">
-      <option name="closed" value="true" />
-      <created>1745310279831</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1745310279831</updated>
-    </task>
-    <task id="LOCAL-00017" summary="News_project">
-      <option name="closed" value="true" />
-      <created>1745409725103</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1745409725103</updated>
-    </task>
-    <task id="LOCAL-00018" summary="News_project">
-      <option name="closed" value="true" />
-      <created>1745412595956</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1745412595956</updated>
-    </task>
-    <task id="LOCAL-00019" summary="News_project">
-      <option name="closed" value="true" />
-      <created>1745422895999</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1745422895999</updated>
-    </task>
-    <task id="LOCAL-00020" summary="News_project">
-      <option name="closed" value="true" />
-      <created>1745594643812</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1745594643812</updated>
-    </task>
-    <task id="LOCAL-00021" summary="News_project">
-      <option name="closed" value="true" />
-      <created>1745595514926</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1745595514926</updated>
-    </task>
-    <task id="LOCAL-00022" summary="News_project">
-      <option name="closed" value="true" />
-      <created>1745744527481</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1745744527481</updated>
-    </task>
-    <task id="LOCAL-00023" summary="News_project">
-      <option name="closed" value="true" />
-      <created>1745757156461</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1745757156461</updated>
-    </task>
-    <option name="localTasksCounter" value="24" />
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -387,8 +264,7 @@
     <MESSAGE value="Работа с Vievs и фильтрами" />
     <MESSAGE value="Работа с Vievs и фильтрами(а ещё с формами)" />
     <MESSAGE value="Работа с Vievs и фильтрами(а ещё с формами и группами)" />
-    <MESSAGE value="News_project" />
-    <option name="LAST_COMMIT_MESSAGE" value="News_project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Работа с Vievs и фильтрами(а ещё с формами и группами)" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DjangoProjects$models.coverage" NAME="models Coverage Results" MODIFIED="1742819680496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/News paper/Newspaper/news" />
