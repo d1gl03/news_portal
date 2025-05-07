@@ -59,7 +59,7 @@ class PostDetailView(DetailView):
     template_name = 'news_detail.html'
     success_url = reverse_lazy('posts_list')
 
-class NewsCreateView(DailyPostLimitMixin, CreateView):
+class NewsCreateView(LoginRequiredMixin, DailyPostLimitMixin, CreateView):
     permission_required = ('news.add.Post')
     model = Post
     form_class = PostForm

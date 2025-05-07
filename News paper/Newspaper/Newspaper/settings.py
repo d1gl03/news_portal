@@ -50,9 +50,15 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.google',
-
+    'django_apscheduler'
 ]
 
+
+CELERY_BROKER_URL = 'redis://localhost:6379'
+CELERY_RESULT_BACKEND = 'redis://localhost:6379'
+CELERY_ACCEPT_CONTENT = ['application/json']
+CELERY_TASK_SERIALIZER = 'json'
+CELERY_RESULT_SERIALIZER = 'json'
 SITE_ID = 1
 
 MIDDLEWARE = [
@@ -138,7 +144,9 @@ USE_I18N = True
 
 USE_TZ = False
 
+APSCHEDULER_DATETIME_FORMAT = "N j, Y, f:s a"
 
+APSCHEDULER_RUN_NOW_TIMEOUT = 25
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
