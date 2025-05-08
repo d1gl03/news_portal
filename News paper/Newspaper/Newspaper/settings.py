@@ -14,7 +14,7 @@ from pathlib import Path
 import os
 
 from django.conf.global_settings import LOGIN_URL, EMAIL_BACKEND
-
+from celery.schedules import crontab
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -59,6 +59,12 @@ CELERY_RESULT_BACKEND = 'redis://localhost:6379'
 CELERY_ACCEPT_CONTENT = ['application/json']
 CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
+CELERY_BEAT_SCHEDULE = {
+    'weekly-newsletter': {
+        'task': 'news.tasks.weekly_newsletter',
+        'schedule': crontab(hour=8, minute=0, day_of_week=1),
+    },
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

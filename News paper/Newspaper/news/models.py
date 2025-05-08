@@ -3,6 +3,9 @@ from django.db import models
 from datetime import datetime
 from django.db.models import Sum
 from django.urls import reverse
+from django.db.models.signals import post_save
+from django.dispatch import receiver
+from .tasks import notify_subscribers
 
 class Author(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
@@ -87,3 +90,8 @@ class Comment(models.Model):
     def dislike(self):
         self.rating -= 1
         self.save()
+
+@receiver(post_save, sender=Post)
+def post_created(sender, instance, created, **kwargs):
+    if created:
+        notify_subscribers.delay(instance.id)
