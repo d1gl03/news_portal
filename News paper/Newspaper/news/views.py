@@ -14,6 +14,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMix
 from django.contrib.auth.views import LoginView
 from .utils import send_notification_email
 from .mixins import DailyPostLimitMixin
+from django.core.cache import cache
 @login_required
 def subscribe(request, category_id):
     category = Category.objects.get(id=category_id)
@@ -59,6 +60,12 @@ class PostDetailView(DetailView):
     template_name = 'news_detail.html'
     success_url = reverse_lazy('posts_list')
 
+    def get_object(self, *args, **kwargs):
+        obj = cache.get(f'post-{self.kwargs["pk"]}', None)
+        if obj is None:
+            obj = super().get_object(queryset=self.queryset)
+            cache.set(f'post-{self.kwargs["pk"]}', obj)
+
 class NewsCreateView(LoginRequiredMixin, DailyPostLimitMixin, CreateView):
     permission_required = ('news.add.Post')
     model = Post
@@ -84,6 +91,7 @@ class PostDeleteView(PermissionRequiredMixin, DeleteView):
     model = Post
     template_name = 'post_delete.html'
     success_url = reverse_lazy('posts_list')
+
 
 class ArticleCreateView(PermissionRequiredMixin, CreateView):
     permission_required = ('news.add.Post')
