@@ -1,4 +1,6 @@
 from django.core.management.base import BaseCommand, CommandError
+from unicodedata import category
+
 from news.models import Post, Category
 
 
@@ -15,7 +17,7 @@ class Command(BaseCommand):
             self.stdout.write(self.style.ERROR('Отменено'))
             return
         try:
-            category = Category.objects.get(name=options['category'])
+            category = Category.objects.get(category_name=options['category'])
             Post.objects.filter(category=category).delete()
             self.stdout.write(self.style.SUCCESS(f'Succesfully deleted all news from category {category.category_name}')) # в случае неправильного подтверждения говорим, что в доступе отказано
         except Category.DoesNotExist:
