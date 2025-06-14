@@ -185,3 +185,106 @@ EMAIL_HOST_USER = 'newsportal121'
 EMAIL_HOST_PASSWORD = 'vwuudoafyzjhkmbc'
 EMAIL_USE_SSL = True
 DEFAULT_FROM_EMAIL = 'newsportal121@yandex.ru'
+
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'style' : '{',
+    'formatters': {
+        'verbose': {
+            'format': '{levelname} {asctime} {module} {message}',
+        },
+
+        'verbose_warning' : {
+            'format' : '{level_name} {message} {pathname} {asctime}'
+        },
+
+        'verbose_error' : {
+            'format' : '{level_name} {message} {pathname} {asctime} {exc_info}'
+        },
+
+        'verbose_mail' : {
+            'format' : '{level_name} {message} {pathname} {asctime}'
+        },
+    },
+    'filters': {
+        'require_debug_true': {
+            '()': 'django.utils.log.RequireDebugTrue',
+        },
+
+        'require_debug_false': {
+            '()': 'django.utils.log.RequireDebugFalse',
+        }
+    },
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+            'formatter': 'verbose',
+            'level': 'DEBUG',
+            'filters': ['require_debug_true'],
+        },
+
+        'general.log' : {
+            'class' : 'logging.FileHandler',
+            'filename' : 'general.log',
+            'formatter': 'verbose_warning',
+            'level': 'INFO',
+            'filters': ['require_debug_false'],
+        },
+
+        'error.log' : {
+            'class': 'logging.FileHandler',
+            'filename' : 'errors.log',
+            'formatter': 'verbose_error',
+            'level': 'ERROR',
+        },
+
+        'security.log' : {
+            'class': 'logging.FileHandler',
+            'filename' : 'security.log',
+            'formatter': 'verbose',
+            'level': 'INFO',
+        },
+
+        'mail.log' : {
+            'class': 'django.utils.log.AdminEmailHandler',
+            'formatter': 'verbose_mail',
+            'level': 'ERROR',
+            'filters': ['require_debug_false'],
+        }
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['console', 'general.log'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+
+        'django.request': {
+            'handlers' : ['error.log', 'mail.log'],
+            'level' : 'ERROR',
+            'propagate': False,
+        },
+
+        'django.server' : {
+            'handlers' : ['error.log', 'mail.log'],
+            'level' : 'ERROR',
+            'propagate': False,
+        },
+
+        'django.template' : {
+            'handlers' : ['error.log'],
+            'level' : 'ERROR',
+            'propagate': False,
+        },
+
+        'django.security' : {
+            'handlers' : ['security.log'],
+            'level' : 'INFO',
+            'propagate': False,
+        }
+    },
+}
+
+
