@@ -154,7 +154,10 @@ USE_I18N = True
 
 USE_TZ = False
 
-LOCALE_PATH = os.path.join(BASE_DIR, 'locale')
+LOCALE_PATH = [
+    os.path.join(BASE_DIR, 'locale')
+]
+
 
 APSCHEDULER_DATETIME_FORMAT = "N j, Y, f:s a"
 
