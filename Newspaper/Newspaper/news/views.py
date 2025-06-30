@@ -134,3 +134,5 @@ def send_notifications(sender, instance, action, **kwargs):
                 )
                 msg.attach_alternative(html_content, "text/html")
                 msg.send()
+
+

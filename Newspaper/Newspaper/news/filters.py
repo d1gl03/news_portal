@@ -1,22 +1,23 @@
 from django_filters import FilterSet, CharFilter, DateFilter, ModelChoiceFilter
 from .models import Post, Category
 from django import forms
+from django.utils.translation import gettext as _
 
 class PostFilter(FilterSet):
     title = CharFilter(
-        label='Название',
+        label=_('Название'),
         lookup_expr='icontains'
     )
 
 
     author   = CharFilter(
         lookup_expr='icontains',
-        label='Автор'
+        label=_('Автор')
     )
 
     date_posted = DateFilter(
         lookup_expr='gt',
-        label='Позже указанной даты',
+        label=_('Позже указанной даты'),
         widget=forms.DateInput(attrs={'type': 'date'})
     )
 
@@ -28,9 +29,9 @@ class PostFilter(FilterSet):
 
 class CategoryFilter(FilterSet):
     category = ModelChoiceFilter(
-        empty_label="Все категории",
-        field_name='category',
-        label="Выбор категории",
+        empty_label=_("Все категории"),
+        field_name=_('category'),
+        label=_("Выбор категории"),
         queryset=Category.objects.all()
     )
 

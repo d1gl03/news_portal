@@ -3,7 +3,7 @@
 {% load censor_filter %}
 
 {% block title %}
-{{ post_item.title|censor }}
+{{ post.title|censor }}
 {% endblock title %}
 
 {% block content %}
@@ -11,9 +11,33 @@
    <h3>Дата публикации: {{ post.date_posted|date:'d.m.Y' }}</h3>
    <hr>
 
+
+   {% if post.image %}
+   <div style="margin: 20px 0;">
+       <img src="{{ post.image.url }}" alt="{{ post.title }}" style="max-width: 100%; height: auto;">
+   </div>
+   {% endif %}
+
+   {% if post.video %}
+   <div style="margin: 20px 0;">
+       <video controls width="100%" style="max-height: 500px;">
+           <source src="{{ post.video.url }}" type="video/mp4">
+           Ваш браузер не поддерживает видео
+       </video>
+   </div>
+   {% endif %}
+
    <div>
        {{ post.content|censor }}
    </div>
+
+   {% if post.file %}
+   <div style="margin-top: 20px;">
+       <a href="{{ post.file.url }}" download class="btn">
+           📎 Скачать прикрепленный файл ({{ post.file.name|slice:"-4:" }})
+       </a>
+   </div>
+   {% endif %}
 
    <hr>
    <a href="/news/">Вернуться к списку новостей</a>

@@ -55,6 +55,9 @@ class Post(models.Model):
         max_length=200)
     content = models.TextField()
     rating = models.IntegerField(default=0)
+    image = models.ImageField(upload_to='posts/images/', blank=True, null=True)
+    video = models.FileField(upload_to='posts/videos/', blank=True, null=True)
+    file = models.FileField(upload_to='posts/files/', blank=True, null=True)
     def like(self):
         self.rating += 1
         self.save()

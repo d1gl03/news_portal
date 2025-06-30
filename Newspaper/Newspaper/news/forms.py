@@ -1,7 +1,7 @@
 from django import forms
 from .models import Post
 from django.core.exceptions import ValidationError
-
+from django.utils.translation import gettext as _
 
 class PostForm(forms.ModelForm):
     class Meta:
@@ -16,10 +16,10 @@ class PostForm(forms.ModelForm):
         content = cleaned_data.get('content')
         if len(content) < 30:
             raise ValidationError({
-                'content': 'Контент должен содержать не менее 30 символов!'
+                'content': _('Контент должен содержать не менее 30 символов!')
             })
         title = cleaned_data.get('title')
         if not title:
             raise ValidationError({
-                'title': 'Заголовок не может быть пустым!'
+                'title': _('Заголовок не может быть пустым!')
             })
