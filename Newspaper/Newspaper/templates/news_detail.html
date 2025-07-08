@@ -39,9 +39,9 @@
    </div>
    {% endif %}
    <hr>
-<h3>Комментарии {{ post.comments.filter(status="accepted").count() }}</h3>  
+<h3>Комментарии {{ accepted_comments_count }}</h3>
 
-{% for comment in post.comments.filter(status="accepted") %}
+{% for comment in accepted_comments %}
 <div class="comment">
     <strong>{{ comment.user.username }}</strong>
     <small>{{ comment.comment_date|date:'d.m.Y H:i' }}</small>

@@ -67,6 +67,14 @@ class PostDetailView(DetailView):
             cache.set(f'post-{self.kwargs["pk"]}', obj)
         return obj
 
+def post_detail(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+    accepted_comments = post.comments.filter(status='accepted')
+    return render(request, 'news_detail.html', {
+        'post': post,
+        'accepted_comments': accepted_comments,
+        'accepted_comments_count': accepted_comments.count(),
+    })
 
 class NewsCreateView(LoginRequiredMixin, DailyPostLimitMixin, CreateView):
     permission_required = ('news.add.Post')
@@ -110,7 +118,7 @@ class CommentModerateView(LoginRequiredMixin, UpdateView):
     model = Comment
     fields = ['status']
     template_name = 'moderate.html'
-    success_url = reverse_lazy('comments:moderation_list')
+    success_url = reverse_lazy('moderation_list')
 
     def form_valid(self, form):
         response = super().form_valid(form)
@@ -118,6 +126,17 @@ class CommentModerateView(LoginRequiredMixin, UpdateView):
             from .signals import send_comment_status_notification
             send_comment_status_notification(self.object)
         return response
+
+    def post(self, request, pk):
+        comment = get_object_or_404(Comment, pk=pk)
+        comment.status = 'accepted'
+        comment.save()
+        post = comment.post
+        accepted_comments = post.comments.filter(status='accepted')
+        return render(request, 'moderate.html', {
+            'post': post,
+            'accepted_comments': accepted_comments,
+        })
 
 class PostUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
     permission_required = ('news.change.Post')
