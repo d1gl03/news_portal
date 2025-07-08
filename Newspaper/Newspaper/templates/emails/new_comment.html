@@ -8,6 +8,6 @@
     <blockquote>{{ comment.comment_text }}</blockquote>
 
     <p>Вы можете ответить или изменить статус комментария на
-    <a href="{{ site_url }}{% url 'comment_moderate' comment.id %}">странице модерации</a>.</p>
+    <a href="{{ site_url }}{% url 'moderate' %}">странице модерации</a>.</p>
 </body>
 </html>

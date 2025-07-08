@@ -5,7 +5,7 @@ from django.dispatch import receiver
 from django.shortcuts import render, redirect, get_object_or_404
 from django.template.loader import render_to_string
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
-from .models import Post, Category, PostCategory, Comment
+from .models import Post, Category, PostCategory, Comment, Author
 from  datetime import  datetime
 from .filters import PostFilter, CategoryFilter
 from django.urls import reverse_lazy, reverse
@@ -67,14 +67,7 @@ class PostDetailView(DetailView):
             cache.set(f'post-{self.kwargs["pk"]}', obj)
         return obj
 
-def post_detail(request, pk):
-    post = get_object_or_404(Post, pk=pk)
-    accepted_comments = post.comments.filter(status='accepted')
-    return render(request, 'news_detail.html', {
-        'post': post,
-        'accepted_comments': accepted_comments,
-        'accepted_comments_count': accepted_comments.count(),
-    })
+
 
 class NewsCreateView(LoginRequiredMixin, DailyPostLimitMixin, CreateView):
     permission_required = ('news.add.Post')
@@ -93,7 +86,6 @@ class CommentCreateView(LoginRequiredMixin, CreateView):
     model = Comment
     form_class = CommentForm
     template_name = 'comment_edit.html'
-    success_url = reverse_lazy('moderation_list')
     def form_valid(self, form):
         form.instance.user = self.request.user
         form.instance.post = get_object_or_404(Post, pk=self.kwargs['pk'])
@@ -102,41 +94,46 @@ class CommentCreateView(LoginRequiredMixin, CreateView):
     def get_success_url(self):
         return reverse('post_detail', kwargs={'pk': self.object.post.pk})
 
-class CommentModerationList(LoginRequiredMixin, ListView):
-    model = Comment
-    template_name = 'moderation_list.html'
-    context_object_name = 'comments'
-    def get_queryset(self):
-        # Показываем только комментарии к постам текущего автора
-        return Comment.objects.filter(
-            post__author__user=self.request.user,
-            status=Comment.STATUS_PENDING
-        )
+# class CommentModerationList(LoginRequiredMixin, ListView):
+#     model = Comment
+#     template_name = 'moderation_list.html'
+#     context_object_name = 'comments'
+#     def get_queryset(self):
+#         # Показываем только комментарии к постам текущего автора
+#         return Comment.objects.filter(
+#             post__author__user=self.request.user,
+#             status=Comment.STATUS_PENDING
+#         )
 
 
-class CommentModerateView(LoginRequiredMixin, UpdateView):
+class CommentModerationView(LoginRequiredMixin, ListView):
     model = Comment
-    fields = ['status']
     template_name = 'moderate.html'
-    success_url = reverse_lazy('moderation_list')
+    context_object_name = 'comments'
 
-    def form_valid(self, form):
-        response = super().form_valid(form)
-        if 'status' in form.changed_data:
-            from .signals import send_comment_status_notification
-            send_comment_status_notification(self.object)
-        return response
+    def get_queryset(self):
+        author = get_object_or_404(Author, user=self.request.user)
+        return Comment.objects.filter(
+            post__author=author
+        ).select_related('post', 'user')
 
-    def post(self, request, pk):
-        comment = get_object_or_404(Comment, pk=pk)
-        comment.status = 'accepted'
-        comment.save()
-        post = comment.post
-        accepted_comments = post.comments.filter(status='accepted')
-        return render(request, 'moderate.html', {
-            'post': post,
-            'accepted_comments': accepted_comments,
-        })
+    def post(self, request, *args, **kwargs):
+        comment_id = request.POST.get('comment_id')
+        action = request.POST.get('action')
+        comment = get_object_or_404(Comment, id=comment_id)
+
+        if action == 'accept':
+            comment.status = Comment.STATUS_ACCEPTED
+            comment.save()
+        elif action == 'reject':
+            comment.status = Comment.STATUS_REJECTED
+            comment.save()
+        elif action == 'delete':
+            comment.delete()
+
+        return redirect('moderate')
+
+
 
 class PostUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
     permission_required = ('news.change.Post')

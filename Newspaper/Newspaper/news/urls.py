@@ -3,7 +3,7 @@ from .views import (
     PostListView, PostDetailView,
     NewsCreateView, ArticleCreateView,
     PostUpdateView, PostDeleteView,
-    CommentCreateView, subscribe, CommentModerateView, CommentModerationList
+    CommentCreateView, subscribe, CommentModerationView
 )
 from django.views.decorators.cache import cache_page
 
@@ -16,6 +16,5 @@ urlpatterns = [
     path('<int:pk>/delete/', cache_page(60 * 5)(PostDeleteView.as_view()), name='post_delete'),
     path('subscribe/<int:category_id>/', subscribe, name='subscribe'),
     path('<int:pk>/comment/', CommentCreateView.as_view(), name='comment_create'),
-    path('moderate/<int:pk>/', CommentModerateView.as_view(), name='comment_moderate'),
-    path('moderate/', CommentModerationList.as_view(), name='moderation_list'),
+    path('moderate/', CommentModerationView.as_view(), name='moderate'),
 ]
