@@ -2,14 +2,14 @@ from django.contrib.auth.decorators import login_required
 from django.core.mail import EmailMultiAlternatives
 from django.db.models.signals import post_save, m2m_changed
 from django.dispatch import receiver
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.template.loader import render_to_string
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
-from .models import Post, Category, PostCategory
+from .models import Post, Category, PostCategory, Comment
 from  datetime import  datetime
 from .filters import PostFilter, CategoryFilter
-from django.urls import reverse_lazy
-from .forms import PostForm
+from django.urls import reverse_lazy, reverse
+from .forms import PostForm, CommentForm
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 from django.contrib.auth.views import LoginView
 from .utils import send_notification_email
@@ -63,8 +63,10 @@ class PostDetailView(DetailView):
     def get_object(self, *args, **kwargs):
         obj = cache.get(f'post-{self.kwargs["pk"]}', None)
         if obj is None:
-            obj = super().get_object(queryset=self.queryset)
+            obj = super().get_object()
             cache.set(f'post-{self.kwargs["pk"]}', obj)
+        return obj
+
 
 class NewsCreateView(LoginRequiredMixin, DailyPostLimitMixin, CreateView):
     permission_required = ('news.add.Post')
@@ -77,6 +79,45 @@ class NewsCreateView(LoginRequiredMixin, DailyPostLimitMixin, CreateView):
         post = form.save(commit=False)
         post.post_type = 'NW'
         return super().form_valid(form)
+
+
+class CommentCreateView(LoginRequiredMixin, CreateView):
+    model = Comment
+    form_class = CommentForm
+    template_name = 'comment_edit.html'
+    success_url = reverse_lazy('moderation_list')
+    def form_valid(self, form):
+        form.instance.user = self.request.user
+        form.instance.post = get_object_or_404(Post, pk=self.kwargs['pk'])
+        return super().form_valid(form)
+
+    def get_success_url(self):
+        return reverse('post_detail', kwargs={'pk': self.object.post.pk})
+
+class CommentModerationList(LoginRequiredMixin, ListView):
+    model = Comment
+    template_name = 'moderation_list.html'
+    context_object_name = 'comments'
+    def get_queryset(self):
+        # Показываем только комментарии к постам текущего автора
+        return Comment.objects.filter(
+            post__author__user=self.request.user,
+            status=Comment.STATUS_PENDING
+        )
+
+
+class CommentModerateView(LoginRequiredMixin, UpdateView):
+    model = Comment
+    fields = ['status']
+    template_name = 'moderate.html'
+    success_url = reverse_lazy('comments:moderation_list')
+
+    def form_valid(self, form):
+        response = super().form_valid(form)
+        if 'status' in form.changed_data:
+            from .signals import send_comment_status_notification
+            send_comment_status_notification(self.object)
+        return response
 
 class PostUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
     permission_required = ('news.change.Post')

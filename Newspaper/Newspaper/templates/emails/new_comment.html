@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Новый комментарий к вашему посту</h2>
+    <p>Пользователь {{ comment.user.username }} оставил комментарий к вашему посту
+    <a href="{{ site_url }}{{ post.get_absolute_url }}">{{ post.title }}</a>:</p>
+
+    <blockquote>{{ comment.comment_text }}</blockquote>
+
+    <p>Вы можете ответить или изменить статус комментария на
+    <a href="{{ site_url }}{% url 'comment_moderate' comment.id %}">странице модерации</a>.</p>
+</body>
+</html>

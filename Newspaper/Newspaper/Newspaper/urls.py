@@ -23,7 +23,7 @@ from django.conf.urls.static import static
 from news.api_views import PostViewSet, NewsViewSet, ArticlesViewSet
 from django.conf import settings
 router = DefaultRouter()
-router.register(r'news', PostViewSet, basename='news')
+router.register(r'news', PostViewSet, basename='posts')
 router.register(r'news', NewsViewSet, basename='news')
 router.register(r'articles', ArticlesViewSet, basename='articles')
 
@@ -38,6 +38,7 @@ urlpatterns = [
     path('api/swagger/', SpectacularSwaggerView.as_view(), name='swagger'),
     path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
     path('api/', include(router.urls)),
+
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

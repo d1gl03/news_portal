@@ -1,0 +1,22 @@
+{% extends 'flatpages/default.html' %}
+
+{% block content %}
+<h1>Модерация комментария</h1>
+
+<div class="card mb-4">
+    <div class="card-body">
+        <h5>К посту: {{ object.post.title }}</h5>
+        <p>Автор: {{ object.user.username }}</p>
+        <blockquote>{{ object.text }}</blockquote>
+    </div>
+</div>
+
+<form method="post">
+    {% csrf_token %}
+    <div class="form-group">
+        <label>Статус:</label>
+        {{ form.status }}
+    </div>
+    <button type="submit" class="btn btn-primary">Сохранить</button>
+</form>
+{% endblock %}

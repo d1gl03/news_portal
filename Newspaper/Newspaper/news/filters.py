@@ -36,5 +36,5 @@ class CategoryFilter(FilterSet):
     )
 
     class Meta:
-        model = Post  # Замените на вашу модель публикаций, если она иначе называется
+        model = Post
         fields = []

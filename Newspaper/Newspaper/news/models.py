@@ -79,12 +79,36 @@ class PostCategory(models.Model):
     post = models.ForeignKey(Post, on_delete=models.CASCADE)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
 
+
 class Comment(models.Model):
-    post = models.ForeignKey(Post, on_delete=models.CASCADE)
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-    comment_text = models.TextField()
-    comment_date = models.DateTimeField(default=datetime.now)
+    STATUS_PENDING = 'pending'
+    STATUS_ACCEPTED = 'accepted'
+    STATUS_REJECTED = 'rejected'
+
+    STATUS_CHOICES = [
+        (STATUS_PENDING, 'На модерации'),
+        (STATUS_ACCEPTED, 'Принят'),
+        (STATUS_REJECTED, 'Отклонен'),
+    ]
+    status = models.CharField(
+        max_length=10,
+        choices=STATUS_CHOICES,
+        default=STATUS_PENDING,
+        verbose_name='Статус'
+    )
+    post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name='comments')
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='comments')
+    comment_text = models.TextField(verbose_name='Текст комментария')
+    comment_date = models.DateTimeField(auto_now_add=True, verbose_name='Дата комментария')
     rating = models.IntegerField(default=0)
+
+    class Meta:
+        verbose_name = 'Комментарий'
+        verbose_name_plural = 'Комментарии'
+        ordering = ['-comment_date']
+
+    def __str__(self):
+        return f'Комментарий от {self.user.username} к "{self.post.title}"'
 
     def like(self):
         self.rating += 1
@@ -93,6 +117,9 @@ class Comment(models.Model):
     def dislike(self):
         self.rating -= 1
         self.save()
+
+    def get_absolute_url(self):
+        return f"{self.post.get_absolute_url()}#comment-{self.id}"
 
 @receiver(post_save, sender=Post)
 def post_created(sender, instance, created, **kwargs):
