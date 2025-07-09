@@ -28,6 +28,11 @@ def upgrade_me(request):
 
 
 
+
+
+
+from django.contrib.auth import login
+
 @login_required
 def verify_code(request):
     if request.method == 'POST':
@@ -37,12 +42,18 @@ def verify_code(request):
                 user=request.user,
                 code=code
             )
-            email = EmailAddress.objects.get(user=request.user)
+            user = request.user
+            user.is_active = True
+            user.save()
+            from allauth.account.models import EmailAddress
+            email = EmailAddress.objects.get(user=user)
             email.verified = True
             email.save()
+            login(request, user)
             confirmation.delete()
-            return redirect('/')
-        except EmailConfirmationCode.DoesNotExist:
+            return redirect('posts_list')
+        except:
             return render(request, 'verify_code.html', {'error': 'Неверный код'})
 
     return render(request, 'verify_code.html')
+
