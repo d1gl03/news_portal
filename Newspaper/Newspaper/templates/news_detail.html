@@ -39,16 +39,15 @@
    </div>
    {% endif %}
    <hr>
-<h3>Комментарии {{ accepted_comments_count }}</h3>
+<h3>Комментарии ({{ accepted_comments.count }})</h3>
 
 {% for comment in accepted_comments %}
-<div class="comment">
-    <strong>{{ comment.user.username }}</strong>
-    <small>{{ comment.comment_date|date:'d.m.Y H:i' }}</small>
-    <p>{{ comment.comment_text }}</p>
-</div>
+    <div class="comment">
+        <strong>{{ comment.user.username }}</strong>
+        <p>{{ comment.comment_text }}</p>
+    </div>
 {% empty %}
-<p>Пока нет комментариев. Будьте первым!</p>
+    <p>Пока нет комментариев</p>
 {% endfor %}
 
    {% if user.is_authenticated %}
@@ -59,9 +58,6 @@
 
 
 
-<a href="{% url 'comment_create' post.pk %}" class="btn btn-secondary">
-    Добавить комментарий
-</a>
    <hr>
    <a href="/news/">Вернуться к списку новостей</a>
 {% endblock content %}

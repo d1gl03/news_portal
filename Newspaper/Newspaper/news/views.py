@@ -60,12 +60,17 @@ class PostDetailView(DetailView):
     template_name = 'news_detail.html'
     success_url = reverse_lazy('posts_list')
 
-    def get_object(self, *args, **kwargs):
-        obj = cache.get(f'post-{self.kwargs["pk"]}', None)
-        if obj is None:
-            obj = super().get_object()
-            cache.set(f'post-{self.kwargs["pk"]}', obj)
-        return obj
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['accepted_comments'] = self.object.comments.filter(status='accepted')
+        return context
+
+    # def get_object(self, *args, **kwargs):
+    #     obj = cache.get(f'post-{self.kwargs["pk"]}', None)
+    #     if obj is None:
+    #         obj = super().get_object()
+    #         cache.set(f'post-{self.kwargs["pk"]}', obj)
+    #     return obj
 
 
 
