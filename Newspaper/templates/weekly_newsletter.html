@@ -1,0 +1,9 @@
+<h2>Новости за неделю в категории {{ category.name }}:</h2>
+<ul>
+    {% for post in posts %}
+    <li>
+        <strong>{{ post.title }}</strong><br>
+        {{ post.content|truncatechars:100 }}
+    </li>
+    {% endfor %}
+</ul>

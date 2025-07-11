@@ -1,0 +1,62 @@
+from django.contrib.auth.models import User
+from news.models import Author
+from news.models import Post
+from news.models import Category
+from news.models import Comment
+
+
+user1 = User.objects.get(username='author1')
+user2 = User.objects.get(username='author2')
+user3 = User.objects.create_user(username='Гоша', password='example3', email='user3@example.com') 
+user4 = User.objects.create_user(username='Егор', password='example4', email='use4@example.com')
+дыомадыомадыомадыомадыомадыомадыомадыомадыомадыомадыомадыомадыомм.create(user=user3)
+author2 = Author.objects.create(user=user4)
+
+Category.objects.create(category_name='Технологии')
+Category.objects.create(category_name='Политика')
+Category.objects.create(category_name='Наука')
+Category.objects.create(category_name='Искусство')
+
+post1 = Post.objects.create(post_type='AR', author=author1, title='Статья 1', content='Текст статьи 1', rating=0)
+post2 = Post.objects.create(post_type='AR', author=author1, title='Статья 2', content='Текст статьи 2', rating=0)
+post3 = Post.objects.create(post_type='NW', author=author2, title='Новость 1', content='Текст новости 1', rating=0)
+
+
+Comment.objects.create(post=post1, user=user1, comment_text='Комментарий 1', rating=0)
+Comment.objects.create(post=post1, user=user2, comment_text='Комментарий 2', rating=0)
+Comment.objects.create(post=post2, user=user1, comment_text='Комментарий 3', rating=0)
+Comment.objects.create(post=post3, user=user2, comment_text='Комментарий 4', rating=0)
+
+
+post1.like()
+post1.like()
+post2.like()
+post2.dislike()
+post3.like()
+post3.like()
+post3.like()
+Comment.objects.first().like()
+Comment.objects.first().like()
+Comment.objects.get(id=2).dislike()
+Comment.objects.get(id=3).like()
+Comment.objects.get(id=4).like()
+
+
+for author in Author.objects.all():
+    author.update_rating()
+
+
+best_user = User.objects.order_by('-author__user_rating').values('username', 'author__user_rating').first()
+best_user
+
+
+best_post = Post.objects.order_by('-rating').first()
+result = (
+    best_post.date_posted,
+    best_post.author.user.username,
+    best_post.rating,
+    best_post.title,
+    best_post.preview()
+)
+
+Comment.objects.filter(post=best_post).values('comment_date', 'user__username', 'rating', 'comment_text')

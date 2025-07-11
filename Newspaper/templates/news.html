@@ -1,0 +1,49 @@
+{% extends 'flatpages/default.html' %}
+
+{% load censor_filter%}
+
+{% block title %}
+Новости (всего: {{ posts|length }})
+{% endblock title %}
+
+{% block content %}
+   <h1>Все новости</h1>
+   <h3>Сегодня: {{ time_now|date:'d.m.Y' }}</h3>
+   <hr>
+
+    <h2>Категории</h2>
+   <ul>
+       {% for category in categories %}
+           <li>{{ category.category_name }}</li>
+       {% empty %}
+           <li>Категорий нет.</li>
+       {% endfor %}
+   </ul>
+
+   {% if posts %}
+       <table>
+           <tr>
+               <td>Заголовок</td>
+               <td>Дата публикации</td>
+               <td>Краткое содержание</td>
+               <td>Тип поста</td>
+               <td>Категория</td>
+           </tr>
+
+           {% for news in posts %}
+           <tr>
+               <td>
+                   <a href="/news/{{ news.id }}">{{ news.title|censor }}</a>
+               </td>
+               <td>{{ news.date_posted|date:'d.m.Y' }}</td>
+               <td>{{ news.content|truncatechars:36|censor }}</td>
+               <td>{{ news.post_type }}</td>
+               <td>{{ news.get_category_list|join:", " }}</td>
+           </tr>
+           {% endfor %}
+
+       </table>
+   {% else %}
+       <h2>Новостей нет!</h2>
+   {% endif %}
+{% endblock content %}

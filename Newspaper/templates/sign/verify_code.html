@@ -1,0 +1,11 @@
+{% extends 'flatpages/default.html' %}
+
+{% block content %}
+<h2>Подтвердите email</h2>
+{% if error %}<p style="color:red">{{ error }}</p>{% endif %}
+<form method="post">
+    {% csrf_token %}
+    <input type="text" name="code" placeholder="Введите код из письма">
+    <button type="submit">Подтвердить</button>
+</form>
+{% endblock %}
